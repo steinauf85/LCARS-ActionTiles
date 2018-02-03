@@ -1,5 +1,8 @@
 # LCARS-ActionTiles
 
+See this in action at...  Obviously, my ActionTiles panels won't load.  As I'm not signed in on your computer. 
+http://www.lcarsatalaya.com
+
 This is a web-based user interface for a StarTrek themed LCARS ActionTiles home automation system. It is adaptable to any resolution display, but best with an 800x480 display (Raspberry Pi 7" Touchscreen is my personal setup.
 
 REQUIREMENTS -Tablet PC Raspberry Pi or other internet enabled device -ActionTiles account (it's free to try, cheap to buy) -DaKboard Account (free for now) -IP cameras (not required, but nice addition) -Google Maps coordinates for your area
