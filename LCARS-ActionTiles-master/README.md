@@ -22,6 +22,7 @@ Now that you've downloaded the repository, its time to configure the files to po
 • Traffic Open index.html file, and scroll down to where you see maps.google.com... enter your latitude and longitude, to get the proper traffic map displayed.  Also, obtain a Google Maps API and insert it As well.  
 
 Using http://citylatitudelongitude.com/ you can get your latitude and longitude 
+Using https://developers.google.com/maps/documentation/javascript/get-api-key you can get your Google API key 
 
 • Weather This should automatically pull your location, as it uses geolocation to find your location.
 
