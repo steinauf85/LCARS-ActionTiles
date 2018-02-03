@@ -19,7 +19,9 @@ Now that you've downloaded the repository, its time to configure the files to po
 
 • ActionTiles Open index.html file, and scroll down to where you see my actiontiles web addresses... simply copy and paste your different actiontile panel website addresses into here. I have my ActionTiles panels setup as, Security, Lights, Presence, and HVAC.
 
-• Traffic Open index.html file, and scroll down to where you see maps.google.com... enter your latitude and longitude, to get the proper traffic map displayed.
+• Traffic Open index.html file, and scroll down to where you see maps.google.com... enter your latitude and longitude, to get the proper traffic map displayed.  Also, obtain a Google Maps API and insert it As well.  
+
+Using http://citylatitudelongitude.com/ you can get your latitude and longitude 
 
 • Weather This should automatically pull your location, as it uses geolocation to find your location.
 
