@@ -26,3 +26,6 @@ Using https://developers.google.com/maps/documentation/javascript/get-api-key yo
 • Weather This should automatically pull your location, as it uses geolocation to find your location.
 
 • Dakboard After signing up and configuring your dakboard, I integrated my Apple calendar and Google calendar, open index.html, and edit the Hub address... enter your dakboard web address.
+
+*IMPORTANT*
+If your height is not correct, on line 442 of the lcars.css file, change height...  ie 100px 8000px 780px etc 
