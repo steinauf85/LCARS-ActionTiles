@@ -73,3 +73,9 @@ This will automatically pull your location via geolocation. Manual configuration
 ## Display Tweaks:
 
 The LCARS Wrapper uses CSS to provide layout information for the browser to display the page. By default, the “.lcars-app-container #container {” field within the css\lcars.css file will automatically fill a display, with a slight margin to allow proper display.  
+
+## Updates:
+### February 6, 2018
+• Updated display to percentage.  No lonlonger requires user to adjust to their monitor size.  
+Thanks @kembond from ST community.
+• Updated sounds.  Now the menu uses several different sounds, as compared to one sound only.
