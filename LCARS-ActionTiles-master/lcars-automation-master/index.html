@@ -1,148 +1,161 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <title>LCARS</title>
-      <link rel="stylesheet" href="assets/css/lcars.css">
-      <script type="text/javascript" src="assets/vxgplayer-1.8.31/vxgplayer-1.8.31.min.js"> </script> 
-      <link href="assets/vxgplayer-1.8.31/vxgplayer-1.8.31.min.css" rel="stylesheet"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>LCARS</title>
+  <link rel="stylesheet" href="assets/css/lcars.css">
+  <script type="text/javascript" src="assets/vxgplayer-1.8.31/vxgplayer-1.8.31.min.js"> </script> 
+  <link href="assets/vxgplayer-1.8.31/vxgplayer-1.8.31.min.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-      <div class="lcars-app-container">
-	      
-         <!-- HEADER ==================================================== --> 	
-	      
-         <div id="header" class="lcars-row header">
-		 
-            <!-- ELBOW --> 			
-            <div class="lcars-elbow left-bottom"></div>
-		 
-            <!-- BAR WITH TITLE --> 			
-            <div class="lcars-bar horizontal">
-               <div class="lcars-title right" id="title">LCARS</div>
-               <div class="time-frame lcars-title right"><span id="time-part"></span></div>
-               <div class="time-frame lcars-title right"><span id="date-part"></span></div>
-            </div>
-		 
-            <!-- ROUNDED EDGE DECORATED --> 			
-            <div class="lcars-bar horizontal right-end decorated"></div>
-         </div>
-	      
-         <!-- SIDE MENU ================================================= --> 
-	      
-         <div id="left-menu" class="lcars-column start-space lcars-u-1">
-            <div class="lcars-element lcars" data-target="security"     data-audio="220" 	data-status="off" 	data-bg="lcars-lilac--bg">Security</div>
-	<!--<div class="lcars-element lcars" data-target="cameras" 	data-audio="204" 	data-status="off" 	data-bg="lcars-cameras-bg">Cameras</div>-->
-            <div class="lcars-element lcars" data-target="hub" 		data-audio="211" 	data-status="off" 	data-bg="lcars-melrose-bg">Hub</div>
-            <div class="lcars-element lcars" data-target="hvac" 	data-audio="209" 	data-status="off" 	data-bg="lcars-chestnut-rose-bg">HVAC</div>
-            <div class="lcars-element lcars" data-target="lights" 	data-audio="213" 	data-status="off" 	data-bg="lcars-atomic-tangerine">Lights</div>
-            <div class="lcars-element lcars" data-target="presence"     data-audio="217" 	data-status="off" 	data-bg="lcars-lavender-purple-bg-bg">Presence</div>
-            <div class="lcars-element lcars" data-target="traffic" 	data-audio="211" 	data-status="off" 	data-bg="lcars-red-damask-bg-bg">Traffic</div>
-            <div class="lcars-element lcars" data-target="weather" 	data-audio="202" 	data-status="off" 	data-bg="lcars-danub-bg">Weather</div>
-            <div class="lcars-element lcars" data-target="radar" 	data-audio="204" 	data-status="off" 	data-bg="lcars-orange-peel">RADAR</div>
-            <div class="lcars-element lcars" data-target="audio" 	data-audio="210" 	data-status="off" 	data-bg="lcars-pale-canary">Audio</div>
-            <!-- FILLER --> 			
-            <div class="lcars-bar lcars-u-1"></div>
-         </div>
-	      
-         <!-- FOOTER ==================================================== --> 	
-	      
-         <div id="footer" class="lcars-row footer ">
-            <!-- ELBOW --> 			
-            <div class="lcars-elbow left-top"></div>
-            <!-- BAR --> 			
-            <div class="lcars-bar horizontal both-divider bottom">
-               <div class="lcars-title right" data-target="authorization" id="logout" data-status="on" data-audio="deactivation_complete">Logout</div>
-            </div>
-            <!-- ROUNDED EDGE --> 			
-            <div class="lcars-bar horizontal right-end left-divider bottom"></div>
-         </div>
-	      
-         <!-- MAIN CONTAINER --> 		
-         <div id="container" class="container">
-            	<!-- FRAME LAYOUT --> 			
-		 
-		<!-- Authorization --> 
-            <div class="authorization" data-frame="authorization" data-status="on" data-audio="enter_authorization_code">
-               <div class="auth-logo"> 
-		       	<img src="assets/img/lcars-seal.png" class="seal" alt="LCARS Seal"/> 
-		       	<img src="assets/img/stlogorotating.gif" class="logo-rotating" alt="Star Trek Logo"> 
+	<div class="lcars-app-container">
+
+		<!-- HEADER ==================================================== -->
+
+		<div id="header" class="lcars-row header">
+
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-bottom"></div>
+
+			<!-- BAR WITH TITLE -->
+			<div class="lcars-bar horizontal">
+				<div class="lcars-title right" id="title">LCARS</div>
+                <div class="time-frame lcars-title right"><span id="time-part"></span></div>
+                <div class="time-frame lcars-title right"><span id="date-part"></span></div>
+			</div>
+
+			<!-- ROUNDED EDGE DECORATED -->
+			<div class="lcars-bar horizontal right-end decorated"></div>
 		</div>
-		    
-               <h2 class="lcars-golden-tanoi-color">AUTHORIZATION REQUIRED</h2>
-		    
-               	<h5>ONLY AUTHORIZED PERSONNEL MAY ACCESS THIS TERMINAL<br><br> 
-		   TOUCH TERMINAL TO PROCEED<br><br> 
-		   FAILED ATTEMPTS WILL BE REPORTED 
-		</h5>
+
+		<!-- SIDE MENU ================================================= -->
+
+		<div id="left-menu" class="lcars-column start-space lcars-u-1">
+            <div class="lcars-element lcars" data-target="security" data-audio="220" 	data-status="off" 	data-bg="lcars-lilac-bg">Security</div>			
+		<!--<div class="lcars-element lcars" data-target="cameras" 	data-audio="204" 	data-status="off" 	data-bg="lcars-cameras-bg">Cameras</div>-->
+            <div class="lcars-element lcars" data-target="hub" 		data-audio="211" 	data-status="off" 	data-bg="lcars-melrose-bg">Hub</div>
+            <div class="lcars-element lcars" data-target="lights" 	data-audio="213" 	data-status="off" 	data-bg="lcars-chestnut-rose-bg">Lights</div>
+            <div class="lcars-element lcars" data-target="hvac" 	data-audio="209" 	data-status="off" 	data-bg="lcars-atomic-tangerine-bg">HVAC</div>
+            <div class="lcars-element lcars" data-target="presence" data-audio="217" 	data-status="off" 	data-bg="lcars-lavender-purple-bg">Presence</div>
+            <div class="lcars-element lcars" data-target="traffic" 	data-audio="211" 	data-status="off" 	data-bg="lcars-red-damask-bg">Traffic</div>
+            <div class="lcars-element lcars" data-target="weather" 	data-audio="224" 	data-status="off" 	data-bg="lcars-danub-bg">Weather</div>
+            <div class="lcars-element lcars" data-target="radar" 	data-audio="204" 	data-status="off" 	data-bg="lcars-orange-peel-bg">RADAR</div>
+            <div class="lcars-element lcars" data-target="audio" 	data-audio="210" 	data-status="off" 	data-bg="lcars-lavender-purple-bg">Audio</div>		
+			<!-- FILLER -->
+			<div class="lcars-bar lcars-u-1"></div>
+
+		</div>
+
+		<!-- FOOTER ==================================================== -->
+
+		<div id="footer" class="lcars-row footer ">
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-top"></div>
+			<!-- BAR -->
+			<div class="lcars-bar horizontal both-divider bottom">
+                <div class="lcars-title right" data-target="authorization" id="logout" data-status="on" data-audio="deactivation_complete">Logout</div>
+            </div>
+			<!-- ROUNDED EDGE -->
+			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+		</div>
+
+		<!-- MAIN CONTAINER -->
+		<div id="container" class="container">
+			<!-- FRAME LAYOUT -->
+
+
+			<!-- Authorization -->
+            <div class="authorization" data-frame="authorization" data-status="on" data-audio="enter_authorization_code">
+                <div class="auth-logo">
+                    <img src="assets/img/lcars-seal.png" class="seal" alt="LCARS Seal"/>
+                    <img src="assets/img/stlogorotating.gif" class="logo-rotating" alt="Star Trek Logo">
+                </div>
+
+                <h2 class="lcars-golden-tanoi-color">AUTHORIZATION REQUIRED</h2>
+
+                <h5>ONLY AUTHORIZED PERSONNEL MAY ACCESS THIS TERMINAL<br><br>
+                    TOUCH TERMINAL TO PROCEED<br><br>
+                    FAILED ATTEMPTS WILL BE REPORTED
+                </h5>
             </div>
 
-	    <!-- Cameras -->
+            <!-- Cameras -->
             <div class="cameras" data-frame="cameras" data-status="off" >
-		<div class="vxgplayer" id="vxg_media_player1" url="user:password@192.168.0.1:8080/streaming/channels/101/"  autostart aspect-ratio controls avsync nmf-src="assets/vxgplayer-1.8.31/pnacl/Release/media_player.nmf" nmf-path="assets/vxgplayer-1.8.31/pnacl/Release/media_player.nmf"></div>
+				<div class="vxgplayer" id="vxg_media_player1" url="user:password@192.168.0.1:8080/streaming/channels/101/"  autostart aspect-ratio controls avsync nmf-src="assets/vxgplayer-1.8.31/pnacl/Release/media_player.nmf" nmf-path="assets/vxgplayer-1.8.31/pnacl/Release/media_player.nmf"></div>
             </div>
-		 
-            <!-- Hub --> 
-            <div class="hub" data-frame="hub" data-status="off"> 	 
-		    <iframe class="hub" width="100%" seamless frameBorder="0" src="https://dakboard.com/app"></iframe> </div>
-		 
-            <!-- iHeart/Audio --> 
-            <div class="audio" data-frame="audio" data-status="off"> 	 
-		    <iframe class="audio" width="100%" seamless frameBorder="0" src="https://www.iheart.com/"></iframe> </div>
-		 
-            <!-- HVAC --> 
-            <div class="hvac" data-frame="hvac" data-status="off"> 				
-		    <iframe data-audio="211" class="hvac" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe> </div>
-		 
-            <!-- Lights --> 
-            <div class="lights" data-frame="lights" data-status="off" data-audio="211" > <iframe data-audio="211" class="lights" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe> </div>
-		 
-            <!-- Presence --> 
-            <div class="presence" data-frame="presence" data-status="off"> 				
-		    <iframe data-audio="211" class="presence" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe> </div>
-		 
-       	    <!-- Security --> 
-            <div class="security" data-frame="security" data-status="off"> 				
-		    <iframe data-audio="211" class="security" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe> </div>
-		 
-  	    <!-- Traffic --> 
+
+
+            <!-- Hub -->
+            <div class="hub" data-frame="hub" data-status="off">
+	            <iframe class="hub" width="100%" seamless frameBorder="0" src="https://dakboard.com/app"></iframe>
+            </div>
+
+
+            <!-- HVAC -->
+            <div class="hvac" data-frame="hvac" data-status="off">
+				<iframe data-audio="211" class="hvac" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe>
+            </div>
+
+            <!-- Lights -->
+            <div class="lights" data-frame="lights" data-status="off" data-audio="211" >
+                <iframe data-audio="211" class="lights" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe>
+            </div>
+
+            <!-- Presence -->
+            <div class="presence" data-frame="presence" data-status="off">
+				<iframe data-audio="211" class="presence" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe>
+            </div>
+
+            <!-- Security -->
+            <div class="security" data-frame="security" data-status="off">
+				<iframe data-audio="211" class="security" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe>
+            </div>
+
+            <!-- Traffic -->
             <div class="traffic" data-frame="traffic" data-status="off">
-               <div id="map"></div>
-               <script> 			 
-		       function initMap() { 			 
-			       var map = new google.maps.Map(document.getElementById('map'), { 			 
-					zoom: 12, 			 
-				       center: {lat: 33.7197257, lng: -78.9488477}, 
-				       mapTypeId: google.maps.MapTypeId.HYBRID 			 
-			       }); 	
-			       
-			       var trafficLayer = new google.maps.TrafficLayer(); 			 
-			       trafficLayer.setMap(map); 			 
-		       	} 			 
-		    </script> 			 
-		    	<script async defer 			 
-			    src="https://maps.googleapis.com/maps/api/js?key=INSERT_API_KEY_HERE> 			 
-			</script> 
+				<div id="map"></div>
+			    <script>
+			      function initMap() {
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 12,
+			          center: {lat: 33.7197257, lng: -78.9488477}
+			        });
+			
+			        var trafficLayer = new google.maps.TrafficLayer();
+			        trafficLayer.setMap(map);
+			      }
+			    </script>
+			    <script async defer
+			    src="https://maps.googleapis.com/maps/api/js?key=ENTERYOURGOOGLEMAPSAPIKEY&callback=initMap">
+			    </script>
             </div>
 
-	    <!-- Music --> 
-            <div class="audio" data-frame="audio" data-status="off"> 	 
-		<iframe class="audio" width="100%" seamless frameBorder="0" src="https://www.iheart.com"></iframe> </div>
-															
-            <!-- Weather --> 
-           <div class="weather" data-frame="weather" data-status="off"> 				
-		<iframe src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&layout=image" frameborder="0" scrolling="yes" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%;"></iframe> </div></div>
-		
-	    <!-- RADAR -->
-            <div class="radar" data-frame="radar" data-status="off">
-		<iframe data-audio="211" class="radar" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HER"></iframe></div>
-      </div>
 
-<div class="audio-block" style="display:none !important; height:0px; width:0px;"> </div>
+            <!-- Weather -->
+            <div class="weather" data-frame="weather" data-status="off">
+				<iframe src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&layout=image"  frameborder="0" scrolling="yes" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%;"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/forecast/week?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">meteoblue</a></div>
+            </div>
+
+			<!-- RADAR -->
+            <div class="radar" data-frame="radar" data-status="off">
+				<iframe data-audio="211" class="radar" width="100%" seamless frameBorder="0" src="https://app.actiontiles.com/panel/INSERT_LINK_HERE"></iframe>
+            </div>
+
+			<!-- Music --> 
+            <div class="audio" data-frame="audio" data-status="off"> 	 
+				<iframe class="audio" width="100%" seamless frameBorder="0" src="https://www.iheart.com"></iframe> 
+			</div>
+		</div>
+	</div>
+
+<div class="audio-block" style="display:none !important; height:0px; width:0px;">
+
+</div>
+
 </body>
-										
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script> 
-<script type="text/javascript" src="assets/js/lcars.js"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/lcars.js"></script>
+
 </html>
