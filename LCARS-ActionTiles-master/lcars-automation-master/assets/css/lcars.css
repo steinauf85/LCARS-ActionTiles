@@ -6,8 +6,11 @@
 html,
 body {
   background: black;
-  font-family: Arial, sans-serif;
-  color: #fff;
+  font-family: "Swiss", Arial, sans-serif; /* "Swiss" is new so that sidebar and main auth text is using special font */
+  letter-spacing: 1.5px; /* new to match title bar */
+  text-transform: uppercase; /* new to match title bar */
+  font-weight: normal !important;
+  color: #fff; 
   line-height: 1;
   height: 100%;
   margin: 0;
@@ -17,29 +20,29 @@ body {
   overflow: hidden; }
 
 h1 {
-  font-size: 270%;
-  font-weight: bold; }
+  font-size: 250%;
+  font-weight: normal !important; }
 
 h2 {
   font-size: 150%;
-  font-weight: bold;
+  font-weight: normal !important;
   margin-top: .5rem; }
 
 h3 {
   font-size: 120%;
-  font-weight: bold; }
+  font-weight: normal !important; }
 
 h4 {
   font-size: 100%;
-  font-weight: bold; }
+  font-weight: normal !important; }
 
 h5 {
   font-size: 80%;
-  font-weight: bold; }
+  font-weight: normal !important; }
 
 h6 {
   font-size: 70%;
-  font-weight: bold; }
+  font-weight: normal !important; }
 
 .header,
 .footer {
@@ -689,7 +692,7 @@ div[data-bg="lcars-cameras-bg"] {
   align-self: flex-end; }
 
 .lcars-bar .lcars-title {
-  color: #fff;
+  color: #f90; /* changed from fff */
   background-color: #000;
   text-transform: uppercase;
   margin: 0;
@@ -707,7 +710,8 @@ div[data-bg="lcars-cameras-bg"] {
 
 .lcars-element {
   position: relative;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 150%; /* new */
   color: #000;
   text-align: right;
   background: #fc6;
@@ -793,7 +797,7 @@ div[data-bg="lcars-cameras-bg"] {
 a.lcars-text-box {
   background-color: #000;
   color: #fff;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 7.5rem;
   height: 3rem;
   padding-left: 0.25rem;
